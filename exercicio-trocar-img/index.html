@@ -15,14 +15,22 @@
     <script>
         function trocarImage(){
             
-            if (document.getElementById('presente').alt == 'Presente Fechado')
+            if (document.getElementById('presente').alt == 'Presente Fechado'){
+
             document.getElementById('presente').src= 'presente-aberto.gif';
-        }
+            document.getElementById('presente').alt = 'Presente Aberto';
+
+            }    
+       
+
+        else {
+
+             document.getElementById('presente').src = 'presente-fechado.gif';
+             document.getElementById('presente').alt = 'Presente Fechado';
+
+        } }
+
     </script>
-
-
-
-
 
     
 </body>
