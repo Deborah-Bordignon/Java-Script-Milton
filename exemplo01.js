@@ -9,14 +9,6 @@ let nome= 'Deborah';
  alert ('Nome: ' + nome + '\nIdade: ' +idade );
 
  
-
-
-
-
-
-
-
-
  var teste = 10;
  teste.toExponential(); // Mostra em notação exponencial
  teste.toFixed(2);      
