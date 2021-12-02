@@ -33,12 +33,26 @@ let calc = (numero01, numero02, operador) => {
 
     document.querySelector('#btn-calcular').addEventListener('click', ()=> {
 
-    let numero01 = document.querySelector('txtNumero01').value;
-    let numero02 = document.querySelector('txtNumero02').value;
-    let operador = document.querySelector('txtOperador').value;
+    let numero01 = document.querySelector('#txtNumero01').value;
+    let numero02 = document.querySelector('#txtNumero02').value;
+    let operador = document.querySelector('#txtOperador').value;
 
     let resultado = calc (numero01 , numero02, operador)
     alert(resultado)
-
-
 })
+
+        if (numero > 10){
+            
+            alert('Número maior que 10')
+
+        }
+        else if (numero==10){
+                
+            alert('Número é igual a 10')
+
+        }
+
+        else{
+
+            alert('Número não é maior que 10')
+        }
