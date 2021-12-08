@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salario</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <style>
+        form {
+            background-color: rgba(255,255,255,.4);
+            margin: 200px auto 200px auto;
+            padding: 10px;
+            width: 450px;
+            min-height: 250px;
+            border: #273747 1px solid;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px #273747;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="POST" id="frm-calculadora">
+        <div class="mb-3">
+            <label for="txt-nome">Digite o nome do funcionário: </label> 
+            <input type="text" id="txt-nome" name="txt-nome"
+                placeholder="Nome do funcionário"
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="txt-hora">Valor recebido por hora :  </label> 
+            <input type="text" id="txt-hora" name="txt-hora"
+                placeholder="Valor por hora"
+            />
+        </div>
+
+
+        <div class="mb-3">
+            <label for="txt-total">Total de horas trabalhadas: </label> 
+            <input type="text" id="txt-total" name="txt-total"
+                placeholder="Total de horas trabalhadas"
+            />
+        </div>
+
+
+        <div class="mb-3">
+            <label for="txt-transporte">Deseja receber Vale-Transporte: </label> 
+            <input type="text" id="txt-transporte" name="txt-transporte"
+                placeholder="Sim ou Não"
+            />
+        </div>
+
+
+
+        <button type="button" id="btn-calc" class="btn btn-danger">
+            Calcular
+        </button>
+        <br><br>
+
+            <p id="resultado"> </p>
+        
+    </form>
+
+    
+
+    <!-- BOOSTRAP  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!-- IMPORTAÇÃO JAVASCRIPT -->
+    <script src="index.js"></script>
+</body>
+</html>
