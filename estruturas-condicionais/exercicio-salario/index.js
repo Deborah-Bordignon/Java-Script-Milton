@@ -3,16 +3,16 @@ document.querySelector('#btn-calc').addEventListener('click',function(){
 
     let nome= document.querySelector('#txt-nome').value
     let valorHora= parseFloat(document.querySelector('#txt-hora').value)
-    let total = parseFloat(document.querySelector('#txt-total').value)
-    let novovalor =document.querySelector('#txt-transporte').value
+    let qntHoras = parseFloat(document.querySelector('#txt-total').value)
+    let VT =document.querySelector('#txt-transporte').value
 
-    var bruto = valorHora * total
+    var bruto = valorHora * qntHoras
     var transporte = 0
     var imposto = 0
     var liquido = 0
 
 
-    if (novovalor.toUpperCase() == 'Sim'.toUpperCase()){
+    if (VT.toUpperCase() == 'Sim'.toUpperCase()){
 
         transporte = (bruto * 6) / 100
 
@@ -33,3 +33,13 @@ document.querySelector('#btn-calc').addEventListener('click',function(){
 })
 
 // (total * porcentagem) /100 
+
+
+// usando o switch ficaria
+
+// switch (VT){
+
+//     case 'Sim' : 
+//     transporte = (bruto * 6) / 100
+    
+// }
