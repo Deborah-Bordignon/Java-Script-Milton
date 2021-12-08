@@ -20,7 +20,7 @@ document.querySelector('#btn-calc').addEventListener('click',function(){
 
      if (bruto > 1440.00){
 
-        imposto = (bruto * 11) /100
+        imposto = (bruto * 11) / 100
     }
     
 
